@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 Interview Puzzles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- contents -->
+    <main id="home">
+      <h1>100 Interview Puzzles</h1>
+      <p class="muted">Try each one before opening the solution. <span id="progress"></span></p>
+
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search" autocomplete="off">
+        <select id="catSel" aria-label="Category"><option value="All">All categories</option></select>
+        <select id="diffSel" aria-label="Difficulty">
+          <option value="all">Any difficulty</option><option>Easy</option><option>Medium</option><option>Hard</option>
+        </select>
+        <label class="check"><input type="checkbox" id="hideSolved"> Hide solved</label>
+      </div>
+
+      <ol class="toc" id="toc"></ol>
+      <p class="muted" id="empty" hidden>Nothing matches.</p>
+
+      <h2>Ideas that keep coming up</h2>
+      <ul class="ideas">
+        <li><b>Work backwards</b>: #10, #18, #72</li>
+        <li><b>Find something that never changes</b>: #14, #65, #81, #85</li>
+        <li><b>Encode information (binary, base 3, timing)</b>: #3, #24, #43</li>
+        <li><b>Weigh in thirds</b>: #17, #35, #87</li>
+        <li><b>Use time, not distance</b>: #23, #37</li>
+        <li><b>Symmetry</b>: #9, #48, #80</li>
+        <li><b>Pigeonhole</b>: #34, #93</li>
+        <li><b>Count the opposite case</b>: #82, #90</li>
+      </ul>
+      <p class="muted small">Based on the GeeksforGeeks list "Top 100 Puzzles Asked in Interviews". #87–100 are extra classics.</p>
+    </main>
+
+    <!-- single puzzle -->
+    <main id="view" hidden>
+      <nav class="top">
+        <a href="#/">← Contents</a>
+        <span class="muted" id="pos"></span>
+      </nav>
+      <article id="pz"></article>
+      <nav class="bottom" id="pn"></nav>
+    </main>
+
+  </div>
+
+  <script src="diagrams.js"></script>
+  <script src="puzzles-1.js"></script>
+  <script src="puzzles-2.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
